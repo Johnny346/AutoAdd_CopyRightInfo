@@ -22,7 +22,7 @@ do
 			mystring+=${i##*/}
 			echo ${mystring}
 			sed -i '                         ' ${mystring}
-			sed -i '$a <!-- Ⓒ Copyright Medrecio Limited 2018. -->' ${mystring}
+			sed -i '$a <!-- Ⓒ Copyright Company x -->' ${mystring}
 		   
 		elif [ ${i##*.} = "css" ];
 		   then
@@ -31,7 +31,7 @@ do
 			mystring+=${i##*/}
 			echo ${mystring}
 			sed -i '                         ' ${mystring}
-			sed -i '$a /* Ⓒ Copyright Medrecio Limited 2018.  */' ${mystring}
+			sed -i '$a /* Ⓒ Copyright Company x  */' ${mystring}
 		 elif [ ${i##*.} = "js" ];
 		   then
 			mystring=${i%/*}
@@ -40,7 +40,7 @@ do
 			echo ${mystring}
 			sed -i '                         ' ${mystring}
 			sed -i '                          ' ${mystring}
-			sed -i '$a // Ⓒ Copyright Medrecio Limited 2018.  ' ${mystring}
+			sed -i '$a // Ⓒ Copyright Company x  ' ${mystring}
 		 elif [ ${i##*.} = "scss" ];
 		   then
 			mystring=${i%/*}
@@ -48,7 +48,7 @@ do
 			mystring+=${i##*/}
 			echo ${mystring}
 			sed -i '                         ' ${mystring}
-			sed -i '$a /* Ⓒ Copyright Medrecio Limited 2018.  */  ' ${mystring}
+			sed -i '$a /* Ⓒ Copyright Company x  */  ' ${mystring}
 		 fi
 	#printf "\n\n"
 	fi
